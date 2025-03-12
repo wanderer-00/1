@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример сайта</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .block {
+            padding: 50px;
+            text-align: center;
+        }
+        .block:nth-child(odd) {
+            background-color: white; /* Белый цвет для нечетных блоков */
+        }
+        .block:nth-child(even) {
+            background-color: #eeeeee; /* Серый цвет для четных блоков */
+        }
+        .block1 {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .block1 img {
+            width: 100%;
+            height: auto;
+        }
+        .block1 .text {
+            flex: 1;
+            padding-left: 20px;
+            text-align: center;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Первый блок -->
+    <div class="block1">
+        <!-- Фото слева -->
+        <div>
+            <img src="IMG-20190429-WA0000_.webp" alt="Описание изображения">
+        </div>
+        <!-- Текст и кнопки справа -->
+        <div class="text">
+            <p><strong>ПОТОМСТВЕННАЯ ГАДАЛКА,</strong></p>
+            <p><strong>ЯСНОВИДЯЩАЯ В ТРЕТЬЕМ ПОКОЛЕНИИ</strong></p>
+            <p><strong>БАБУШКА ВЕРА</strong></p>
+            <br>
+            <p><strong>ОБРЯДЫ И РИТУАЛЫ ЛЮБОЙ СЛОЖНОСТИ</strong></p>
+            <br>
+            <p><strong>ИСПРАВЛЮ РАБОТЫ НЕ СПРАВИВШИХСЯ МАСТЕРОВ</strong></p>
+            <p><strong>ПРИЕМ ВЕДУ ЛИЧНО И НА РАССТОЯНИИ.</strong></p>
+            <div class="buttons">
+                <button>Кнопка 1</button>
+                <button>Кнопка 2</button>
+            </div>
+        </div>
+    </div>
+    <!-- Остальные блоки -->
+    <div class="block">Блок 2</div>
+    <div class="block">Блок 3</div>
+    <div class="block">Блок 4</div>
+    <div class="block">Блок 5</div>
+    <div class="block">Блок 6</div>
+    <div class="block">Блок 7</div>
+</body>
+</html>

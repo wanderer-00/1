@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Потомственная гадалка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        :root {
+            --text-color-light: #434343;
+            --text-color: #242424;
+            --bg: #EEEEEE;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 32px
+        }
+
+        p {
+            font-size: 24px;
+            color: var(--text-color);
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .block {
+            padding: 100px 20px;
+            width: 100%;
+            color: #242424;
+        }
+
+        .hero {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            color: var(--text-color-light);
+        }
+
+        .hero>div {
+            width: 50%;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        .hero>div:nth-child(1) img {
+            border-radius: 20px;
+        }
+
+
+        .hero-text h1,
+        .hero-text h2,
+        .hero-text p {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #242424;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+            margin: 0 0 45px 0;
+        }
+
+        .button-container>div a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0px 10px 20px rgba(0, 11, 48, 0.25);
+            background-color: red;
+            padding: 10px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .t-btn_effects {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5);
+            pointer-events: none;
+            animation: ripple-effect 1.5s ease-out;
+            border-radius: 50%;
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        .t-btn_effects.active {
+            animation: ripple-effect 1.5s ease-out;
+        }
+
+        svg.icon {
+            width: 32px;
+            height: 32px;
+            fill: #fff;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .wrapper {
+                max-width: 960px;
+            }
+        }
+
+        @media screen and (max-width: 950px) {
+            .wrapper {
+                max-width: 600px;
+            }
+
+            .button-container>div a {
+                height: 64px
+            }
+        }
+
+        /*
+        @media (orientation: portrait) {
+            .hero>div {
+                width: 100%
+            }
+
+            .hero img {
+                width: 60%;
+                max-width: 500px;
+            }
+
+            .hero-text {
+                max-width: 40%;
+                text-align: left;
+                padding-left: 20px;
+            }
+        }
+*/
+
+        @keyframes ripple-effect {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="hero">
+                <div>
+                    <img src="foto.webp" alt="Бабушка Вера" />
+                </div>
+                <div>
+                    <h1><strong>ПОТОМСТВЕННАЯ ГАДАЛКА</strong></h1>
+                    <h1><strong>ЯСНОВИДЯЩАЯ В ТРЕТЬЕМ ПОКОЛЕНИИ</strong></h1>
+                    <h1><strong>БАБУШКА ВЕРА</strong></h1>
+                    <p><strong>ОБРЯДЫ И РИТУАЛЫ ЛЮБОЙ СЛОЖНОСТИ</strong></p>
+                    <p><strong>ИСПРАВЛЮ РАБОТЫ НЕ СПРАВИВШИХСЯ МАСТЕРОВ</strong></p>
+                    <p><strong>ПРИЕМ ВЕДУ ЛИЧНО И НА РАССТОЯНИИ.</strong></p>
+                </div>
+            </div>
+
+            <div class="button-container"></div>
+
+            <div class="block">
+                <div>
+                    <img src="1.webp" alt="Пожилая Вера сидит за столом с колодой карт в руках на фоне икон">
+                </div>
+
+                <div>
+                    <h2>Немного о себе и как я способна помочь Вам?</h2>
+                    <p>Имя мое - Вера. Родилась и росла я в деревне. Так сложилось, что воспитывали меня моя бабушка и её мама тоесть моя прабабушка. Прабабушка в магии была очень сильным мастером. Помню даже роспись не умела ставить. Но владела исключительно всеми обрядами, а сколько она знала молитв наизусть их даже не сосчитать. На фото я и моя прабабушка.</p>
+                </div>
+
+                <div>
+                    <p>На фото, я и моя прабабушка. Не стало моей прабабушки Татьяны в 1988г. На тот момент ей было говорили 100 с лишним лет, но точные годы ее никто не знал. Мне было 25 лет. После смерти прабабушки, продолжила моя бабушка, и то что проводила моя бабушка я всё уже знала и видела, даже где-то подсказывала бабушке.</p>
+                    <p>Потом умерла моя бабушка, не стало её в 2002г. На тот момент мне было 39 лет. В эти годы у меня уже было много опыта и знаний старинных семейных обрядов которые передаются только по поколению и со стороны никто не посвещен и не имеют понятия насколько это секретно, действительно каждый ритуал семейный, хранится и передается только по поколению. На сегодняшний день мне 62 года и я провожу и владею нашими семейными обрядами которые проверены годами.</p>
+                </div>
+
+                <div>
+                    <img src="2.webp" alt="Старое фото Веры в юности с её бабушкой">
+                </div>
+            </div>
+            <h2 style="text-align:center">Хотите узнать свою правду Сейчас?<br>Жду вас</h2>
+            <div class="button-container"></div>
+
+            <h2 style="text-align:center">Краткое видео о моем Даре</h2>
+            <iframe width="100%" style="aspect-ratio: 720/405" src="https://rutube.ru/play/embed/9dfb502e33a78cec6979b148fbbc460f/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+            <p>
+                Каждому обратившемуся человеку по его ситуации подбираю обряды по фото и лично. У каждого человека свои обряды именно те, которые ему помогут. Поэтому, мы сможем с вами решить какой обряд нужен именно вам: черный или белый, так же защиту, у каждого человека защита своя, только её нужно правильно подобрать.
+            </p>
+            <p>
+                В каждом ритуале, обряде, защите нужно все правильно соблюдать, проводить и следить за каждым шагом, за каждым действием работы.
+            </p>
+            <p>
+                Самое главное в обрядах это сила, четкость и знание. У меня большая практика. Я помогла решить проблемы многим людям, чему очень рада.
+            </p>
+            
+            <div class="button-container"></div>
+
+            <div class="block">
+                <div>
+                    <h2>Верну любимого человека:</h2>
+                    <ul>
+                        <li>Возврат любимого человека независимо от расстояния. Уникальный приворот</li>
+                        <li>Устранение соперниц</li>
+                        <li>Бизнес-магия и многое другое</li>
+                        <li>Решение любых проблем нетрадиционными способами</li>
+                        <li>Ставлю защиту на свою работу, доделываю работу несправившихся магов</li>
+                        <li>Старинные обряды</li>
+                        <li>Возврат любимого человека магией вуду</li>
+                        <li>Заговоры на возврат любимого человека</li>
+                        <li>Снятие венца безбрачия</li>
+                    </ul>
+                </div>
+                <div>
+                <img src="3.webp" alt="Картинка с сердечками и надписью: Гармонизация отношений">
+                </div>
+            </div>
+            <h2>Начните уже Сегодня! Обращайтесь ко мне</h2>
+            <div class="button-container"></div>
+
+            <div class="block">
+                <div>
+                    <img src="" alt="На старом столе расположилась потрёпанная, раскрытая по середине переплёта, книга с волнистыми, будто от воды, страницами озарённая тусклым светом восковой свечи, отражённой в зеркале, стоящем напротив другого зеркала, стоящем напротив другого зеркала, стоящем напротив другого зеркала, стоящем напротив другого зеркала, стоящем напротив другого зеркала, стоящем напротив другого зеркала, стоящем напротив другого зеркала, стоящем напротив другого зеркала, стоящем напротив другого зеркала">
+                </div>
+            </div>
+
+            <div class="block">Блок 6 - Контент</div>
+            <div class="button-container"></div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const buttons = document.querySelectorAll(".t1036__item a");
+
+            function triggerRippleEffect(button) {
+                const ripple = button.querySelector(".t-btn_effects");
+                ripple.classList.remove("active");
+                void ripple.offsetWidth; // Trigger reflow
+                ripple.classList.add("active");
+            }
+
+            setInterval(() => {
+                buttons.forEach((button) => {
+                    triggerRippleEffect(button);
+                });
+            }, 4000); // 4000 milliseconds = 4 seconds
+        });
+    </script>
+</body>
+
+<!-- компонент "Кнопки на контакты" -->
+<script type="text/javascript" src="JS/buttons.js"></script></html>
